@@ -1,0 +1,16 @@
+{
+  "name": "YC App Review",
+  "version": "0.1",
+  "description": "Allows YC applicants to export their YC application into a format used for reviewing. Can be used to share with advisors, YC alumni, friends, family, etc...",
+  "background": {"page": "background.html"},
+  "manifest_version": 2,
+  "browser_action": {
+    "name": "Manipulate DOM",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery-2.0.2.min.js", "background.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+}
