@@ -16,7 +16,7 @@ for (var i =0; i < labels.length; i++) {
       var input_val = the_input.val();
     }
 
-    values.push("<strong>" + label_txt + "</strong><p>" + input_val + "</p>");
+    values.push("<strong>" + label_txt + "</strong><p>" + input_val.replace(/\r\n|\r|\n/g,"<br />") + "</p>");
   }
 }
 
