@@ -5,8 +5,6 @@
 //to check your plugin js is working uncomment the next line.
 
 chrome.browserAction.onClicked.addListener(function (activeTab) {
-  // $('label[for=\"app_questions_demo\"]').text() + " " + $(\"#app_questions_demo\").val()
-
   chrome.tabs.executeScript(null, {
     file: "content.js"
   }, function (result) {
