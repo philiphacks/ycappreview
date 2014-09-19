@@ -7,7 +7,7 @@
   },
   "manifest_version": 2,
   "browser_action": {
-    "name": "Manipulate DOM",
+    "name": "YC App Review",
     "icons": ["icon.png"],
     "default_icon": "icon.png"
   },
@@ -17,6 +17,6 @@
   }],
   "permissions": [
     "https://apply.ycombinator.com/app/edit",
-    "clipboardWrite"
+    "tabs"
   ]
 }
