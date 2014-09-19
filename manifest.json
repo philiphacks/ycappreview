@@ -8,8 +8,10 @@
   "manifest_version": 2,
   "browser_action": {
     "name": "YC Review - Easy YC Application Sharer",
-    "icons": {  "48": "icon48.png",
-                "128": "icon128.png" },
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
     "default_icon": "icon48.png"
   },
   "content_scripts": [ {
@@ -17,7 +19,6 @@
     "matches": ["https://apply.ycombinator.com/app/edit"]
   }],
   "permissions": [
-    "https://apply.ycombinator.com/app/edit",
-    "tabs"
+    "https://apply.ycombinator.com/app/edit"
   ]
 }
