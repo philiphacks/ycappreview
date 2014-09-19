@@ -9,7 +9,9 @@ chrome.browserAction.onClicked.addListener(function (activeTab) {
     file: "content.js"
   }, function (result) {
     if (result == undefined) {
-      result = 'Please run this script in the tab of your YC application!';
+      result = 'ERROR: This script only works on https://apply.ycombinator.com/app/edit!';
+    } else {
+      result = '<div style="background-color:#FFF9AC"><h1>Instructions</h1><ul><li><a href="http://docs.google.com/document/create?hl=en" target="_blank">CREATE NEW GOOGLE DOCUMENT TO SHARE</a> (opens new browser tab) </li><li>Select all of the text below</li><li>Copy and Paste into Google Docs (or any other collaboration software)</li><hr></div>' + result;
     }
     var htmlCode = "<html><body>" + result + "</body></html>";
     var url = "data:text/html," + encodeURIComponent(htmlCode);
