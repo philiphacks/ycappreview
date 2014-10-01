@@ -6,7 +6,7 @@
 
 chrome.browserAction.onClicked.addListener(function (activeTab) {
   chrome.tabs.executeScript(null, {
-    file: "content.js"
+    file: "js/content.js"
   }, function (result) {
     if (result == undefined) {
       result = 'ERROR: This script only works on <a href="https://apply.ycombinator.com/app/edit">https://apply.ycombinator.com/app/edit</a>!';
